@@ -23,3 +23,7 @@ inquirer
     .then(answers => {
         console.info('Answer:', answers.choices);
     });
+
+db.query('SELECT * FROM employee', function (err, results){
+    console.info(results);
+});    
